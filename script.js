@@ -20,10 +20,13 @@ depositBtn.addEventListener('click',function(){
     
     document.getElementById('currentDeposit').innerText=totalDeposit;
     */
+   if(depositNumber < 0){
+       alert(`deposit number can't be negative`);
+   }else{
    updateSpanText("currentDeposit",depositNumber);
 //balance
    updateSpanText("currentBalance",depositNumber);
-   document.getElementById('depositAmount').value=""; 
+   document.getElementById('depositAmount').value=""; }
 })
 
 
